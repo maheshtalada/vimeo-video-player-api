@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Total Wine & More</title>
+
+    </head>
+    <body>
+        <!-- single video player on page load -->
+        <section calss="single-video-player">
+            <div id="player_1" data-video="76393087" data-type="video" data-autoplay="true"></div>
+        </section>
+
+        <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="froogaloop.js"></script>
+        <script type="text/javascript" src="videoplayerAPI.js"></script>
+        <script type="text/javascript">
+            /*=================================================================== */
+            /* Usage Example  */
+            /* ==================================================================*/
+            var video = new TWM.Videoplayer('#player_1' , {
+                            playerID : 'video_player_1',
+                            video :'7100569' ,
+                            background : '#000',
+                            playerWidth : 640 ,
+                            playerHeight : 350,
+                            autoPlay : true
+                        });
+
+            //manual event triggers  examples
+            //video.trigger('play');
+            //video.trigger('pause');
+            //video.trigger('unload');
+
+            // callback individual implementation examples
+            video.ON('play' , function() {
+                console.log('playing');
+            });
+            video.ON('pause' , function() {
+                console.log('paused');
+            });
+            video.ON('finish' , function() {
+                console.log('finished');
+            });
+
+            //callback chain implementation examples
+            video.ON('play' , function() {
+                console.log('playing');
+            }).ON('pause' , function() {
+                console.log('paused');
+            }).ON('finish' , function() {
+                console.log('finished');
+            });
+
+        </script>
+    </body>
+</html>
+
