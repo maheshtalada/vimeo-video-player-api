@@ -19,6 +19,10 @@
 
 ## Player Initialisaiton
 
+```html
+<div id="player_1" data-video="76979871" data-type="video" data-autoplay="true"></div>
+```
+
 ```js
 var video = TWM.Videoplayer('#player_1' , {
                             playerID : 'video_player_1',
