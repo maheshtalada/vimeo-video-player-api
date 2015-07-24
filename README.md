@@ -40,13 +40,13 @@ video.trigger('unload');
 ## Event callbacks
 ```js
 video.ON('play' , function() {
-console.log('playing');
+	console.log('playing');
 });
 video.ON('pause' , function() {
-console.log('paused');
+	console.log('paused');
 });
 video.ON('finish' , function() {
-console.log('finished');
+	console.log('finished');
 });
 ```
 
