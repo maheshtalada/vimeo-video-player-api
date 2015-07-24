@@ -1,13 +1,15 @@
-vimeoplayer-custom-API
-======================
            	    \|||/
 	            (o o)
 	+~~~~~ooO~~~~(_)~~~~~~~~+
-	| Hi                    |
-	|   Iam vimeoplayer API |
-	|      Mahesh created me|
+	|                     	|
+	|    Vimeoplayer API 	|
+	|   					|
 	+~~~~~~~~~~~~~~~~~Ooo~~~+
 	           |__|__|
 	            || ||
 	           ooO Ooo
-Simple Vimeo Video player API , can add videos on demand
+Simple Vimeo Video player API
+
+	Adding videos on demand
+	Event Callbacks to track (Play , Pause , Finish)
+	Manual event triggers (Play , Pause , Unload)

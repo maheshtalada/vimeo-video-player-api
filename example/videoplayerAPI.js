@@ -2,7 +2,6 @@
  * TWM Videoplayer API : videoplayer.js v1.0
  * Using Vimeo player
  * Dependencies - froogaloop.js API to access Vimeo player events using Postmessage API
- * Required new to create object
  * Note : Changes made to the Original Froogaloop API , so link API from project folder
  * Change 1 : Sent Videoplayer scope to the Froogaloop when ever event attaches
  * Change 2 : Acessing the Videoplayer scope in callback when ever recieves message from main target
@@ -12,30 +11,31 @@
 
     TWM.Videoplayer = (function(){
 
-        // sample player URL :http://player.vimeo.com/video/7100569?api=1&amp;player_id=single_player_1
+        // sample player URL - https://player.vimeo.com/video/7100569?api=1&amp;player_id=single_player_1
         // default options for video player , add  more if needed
         var defaults = {
             playerWidth: '100%',
             playerHeight: '100%',
             pauseOthersOnPlay: true, //this happens by default from vimeo side
             autoplay: false,
-            playerURL : window.location.protocol+'//player.vimeo.com/video/{{VID}}?api=1&amp;player_id={{PID}}',
+            playerURL : 'https://player.vimeo.com/video/{{VID}}?api=1&amp;player_id={{PID}}',
             playerID : 'vimeo-video-player',
             isReady : false,
 
         };
 
         function Videoplayer ( ele , options ) {
-            //enforce create object if the object not of the same
-            if ( !(this instanceof TWM.Videoplayer) ) {
-                return new TWM.Videoplayer(ele , options);
+            //enforce create object for the same instance
+            if ( !(this instanceof Videoplayer) ) {
+                return new Videoplayer(ele , options);
             }
             this.$element = $(ele);
             this.options = $.extend({} , defaults , options , this.$element.data());
             this.init();
         }
 
-        Videoplayer.prototype.init = function() {
+
+        Videoplayer.prototype.init = function(ele , options) {
             var self = this;
             self.$f=null;
             // load preloader untill video loads
@@ -53,7 +53,7 @@
                 self.$f = $f(self.options.playerID);
                 //check if player is ready after adding the src
                 // if ready goto callback
-                self.$f.addEvent('ready', self._ready ,  self);
+                    self.$f.addEvent('ready', self._ready ,  self);
             });
 
             return this;

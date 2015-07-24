@@ -10,7 +10,11 @@
     <body>
         <!-- single video player on page load -->
         <section calss="single-video-player">
-            <div id="player_1" data-video="76393087" data-type="video" data-autoplay="true"></div>
+            <div id="player_1" data-video="76979871" data-type="video" data-autoplay="true"></div>
+            <br>
+            <br>
+            <br>
+            <div id="player_2" data-video="76979871" data-type="video" data-autoplay="true"></div>
         </section>
 
         <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
@@ -20,13 +24,13 @@
             /*=================================================================== */
             /* Usage Example  */
             /* ==================================================================*/
-            var video = new TWM.Videoplayer('#player_1' , {
+            var video = TWM.Videoplayer('#player_1' , {
                             playerID : 'video_player_1',
-                            video :'7100569' ,
+                            video :'76979871' ,
                             background : '#000',
                             playerWidth : 640 ,
                             playerHeight : 350,
-                            autoPlay : true
+                            autoPlay :false
                         });
 
             //manual event triggers  examples
@@ -34,7 +38,7 @@
             //video.trigger('pause');
             //video.trigger('unload');
 
-            // callback individual implementation examples
+            //callback individual implementation examples
             video.ON('play' , function() {
                 console.log('playing');
             });
@@ -47,6 +51,23 @@
 
             //callback chain implementation examples
             video.ON('play' , function() {
+                console.log('playing');
+            }).ON('pause' , function() {
+                console.log('paused');
+            }).ON('finish' , function() {
+                console.log('finished');
+            });
+
+            var video1 = TWM.Videoplayer('#player_2' , {
+                playerID : 'video_player_2',
+                video :'76979871' ,
+                background : '#000',
+                playerWidth : 640 ,
+                playerHeight : 350,
+                autoPlay :false
+            });
+
+            video1.ON('play' , function() {
                 console.log('playing');
             }).ON('pause' , function() {
                 console.log('paused');

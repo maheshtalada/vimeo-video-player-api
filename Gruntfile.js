@@ -1,4 +1,4 @@
-var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
+var proxySnippet = require('grunt-connect-proxy/lib/utils.js').proxyRequest;
 
 // Gruntfile.js
 module.exports = function(grunt) {
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 options: {
                     middleware: function (connect, options) {
                         return [
-                            // proxySnippet,
+                            proxySnippet,
                             require('connect-livereload')(),
                             connect.static(options.base),
                             connect.directory(options.base),

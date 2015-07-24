@@ -1,8 +1,8 @@
 {
-  "name": "JSDebugger",
-  "description": "JSDebugger",
+  "name": "Vimeoplayer",
+  "description": "Vimeo Video player wrapper API",
   "version": "0.1.0",
-  "homepage": "http://jsdebugger",
+  "homepage": "http://vimeoplayer",
   "licenses": [
     {
       "type": "Copyright",
@@ -20,7 +20,7 @@
     "grunt-contrib-imagemin": "~0.1.4",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-connect": "~0.3.0",
-    "grunt-connect-proxy": "~0.1.5",
+    "grunt-connect-proxy": "*",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-banner": "~0.1.4",
     "grunt-open": "~0.2.1",
