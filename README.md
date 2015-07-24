@@ -4,7 +4,7 @@
 	            (o o)
 	+~~~~~ooO~~~~(_)~~~~~~~~+
 	|                     	|
-	|    Vimeoplayer API 	|
+	|    ##Vimeoplayer API 	|
 	|   					|
 	+~~~~~~~~~~~~~~~~~Ooo~~~+
 	           |__|__|
