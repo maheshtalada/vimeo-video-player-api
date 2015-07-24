@@ -1,4 +1,4 @@
-##Simple Vimeo Video player API
+##Vimeo Video player API
 
            	    \|||/
 	            (o o)
@@ -32,6 +32,8 @@ var video = TWM.Videoplayer('#player_1' , {
                             playerHeight : 350,
                             autoPlay :true
                         });
+//later use
+$('#player_1').data('videoObj' , video);
 ```
 
 ## Trigger events manually
