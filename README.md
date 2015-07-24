@@ -30,3 +30,33 @@ var video = TWM.Videoplayer('#player_1' , {
                         });
 ```
 
+## Trigger events manually
+```js
+video.trigger('play');
+video.trigger('pause');
+video.trigger('unload');
+```
+
+## Event callbacks
+```js
+video.ON('play' , function() {
+console.log('playing');
+});
+video.ON('pause' , function() {
+console.log('paused');
+});
+video.ON('finish' , function() {
+console.log('finished');
+});
+```
+
+## Event callbacks chain
+```js
+video.ON('play' , function() {
+     	console.log('playing');
+     }).ON('pause' , function() {
+     	console.log('paused');
+     }).ON('finish' , function() {
+     	console.log('finished');
+     });
+```
