@@ -30,7 +30,7 @@ var video = TWM.Videoplayer('#player_1' , {
                             background : '#000',
                             playerWidth : 640 ,
                             playerHeight : 350,
-                            autoPlay :false
+                            autoPlay :true
                         });
 ```
 
