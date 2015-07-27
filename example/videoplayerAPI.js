@@ -25,7 +25,7 @@
         };
 
         function Videoplayer ( ele , options ) {
-            //enforce create object for the same instance
+            //enforce create object , if new operator not used when creating instance
             if ( !(this instanceof Videoplayer) ) {
                 return new Videoplayer(ele , options);
             }
@@ -53,7 +53,7 @@
                 self.$f = $f(self.options.playerID);
                 //check if player is ready after adding the src
                 // if ready goto callback
-                    self.$f.addEvent('ready', self._ready ,  self);
+                self.$f.addEvent('ready', self._ready ,  self);
             });
 
             return this;

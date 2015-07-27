@@ -13,7 +13,7 @@
 
 
 ## Features
-	Adding videos on demand
+	Adding videos on demand - (
 	Event Callbacks to track (Play , Pause , Finish)
 	Manual event triggers (Play , Pause , Unload)
 
@@ -32,7 +32,7 @@ var video = TWM.Videoplayer('#player_1' , {
                             playerHeight : 350,
                             autoPlay :true
                         });
-//later use
+//for later use
 $('#player_1').data('videoObj' , video);
 ```
 
