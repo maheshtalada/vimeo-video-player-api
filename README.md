@@ -1,5 +1,4 @@
 ##Vimeo Video player API
-```
 
            	      \|||/
 	              (o o)
@@ -12,16 +11,15 @@
 	           	 |__|__|
 	              || ||
 	           	 ooO Ooo
-```
 
 ## Features
 	Adding videos on demand - no dependency to load video's in iframe on pageload
 	Event Callbacks to track - Play , Pause , Finish
 	Manual event triggers  - Play , Pause , Unload
 
-![vimeoplayer-custom-API](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/sample1.png)
+![vimeo-video-player-api](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/sample1.png)
 
-![vimeoplayer-custom-API](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/jumbosample.png)
+![vimeo-video-player-api](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/jumbosample.png)
 
 ## Player Initialisaiton
 
