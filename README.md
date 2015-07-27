@@ -35,6 +35,8 @@ var video = TWM.Videoplayer('#player_1' , {
                         });
 //for later use
 $('#player_1').data('videoObj' , video);
+
+Example URL : https://player.vimeo.com/video/76979871?api=1&amp;player_id=player_1
 ```
 
 ## Trigger events manually
