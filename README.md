@@ -14,7 +14,7 @@
 
 ## Features
 	Adding videos on demand - no dependency to load video's in iframe on pageload
-	Event Callbacks to track - Play , Pause , Finish
+	Track Event Callbacks - Play , Pause , Finish
 	Manual event triggers  - Play , Pause , Unload
 
 ![vimeo-video-player-api](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/sample1.png)
@@ -53,9 +53,13 @@ video.ON('play' , function() {
 video.ON('pause' , function() {
 	console.log('paused');
 });
+video.ON('playProgress' , function(data, id) {
+  	console.log('percentdone:'+data.percent*100 , 'time:'+data.seconds)
+});
 video.ON('finish' , function() {
 	console.log('finished');
 });
+
 ```
 
 ## Event callbacks chain
@@ -64,6 +68,8 @@ video.ON('play' , function() {
      	console.log('playing');
      }).ON('pause' , function() {
      	console.log('paused');
+     }).ON('playProgress' , function(data, id) {
+     	console.log('percentdone:'+data.percent*100 , 'time:'+data.seconds)
      }).ON('finish' , function() {
      	console.log('finished');
      });

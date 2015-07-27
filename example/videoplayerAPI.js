@@ -40,7 +40,7 @@
             self.$f=null;
             // load preloader untill video loads
             this.$element.append('<div class="vid-load" id=loader_'+this.options.playerID+'>Loading video...</div>');
-
+            console.log(this.options.playerID);
             // lets create an iframe & add src
             $('<iframe />', {
                 id: this.options.playerID,
@@ -63,7 +63,7 @@
          * ready callback , triggers when ever player is ready
          */
         Videoplayer.prototype._ready = function() {
-            console.log("Player : " , this.options.playerID , " is ready");
+            //console.log("Player : " , this.options.playerID , " is ready");
             this.options.isReady = true;
             this.$element.find('#loader_'+this.options.playerID).hide();
             $('#'+this.options.playerID).css({
