@@ -1,21 +1,23 @@
 ##Vimeo Video player API
 
-           	    \|||/
-	            (o o)
-	+~~~~~ooO~~~~(_)~~~~~~~~+
-	|                     	|
-	|    Vimeoplayer API 	|
-	|   					|
-	+~~~~~~~~~~~~~~~~~Ooo~~~+
-	           |__|__|
-	            || ||
-	           ooO Ooo
+           	    	\|||/
+	            	(o o)
+	+~~~~~~~~~ooO~~~~(_)~~~~~~~~~~~~+
+	|                     		 	|
+	|	Vimeoplayer API				|
+	|	  Adding videos on demand	|
+	|	  Track Event callbacks		|
+	|	  Manual event triggers		|
+	+~~~~~~~~~~~~~~~~~~~~~~~~Ooo~~~~+
+	           	   |__|__|
+	            	|| ||
+	           		ooO Ooo
 
 
 ## Features
-	Adding videos on demand - (
-	Event Callbacks to track (Play , Pause , Finish)
-	Manual event triggers (Play , Pause , Unload)
+	Adding videos on demand - no dependency to load video's on pageload
+	Event Callbacks to track - Play , Pause , Finish)
+	Manual event triggers  - Play , Pause , Unload
 
 ![vimeoplayer-custom-API](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/sample1.png)
 
@@ -29,9 +31,7 @@
 
 ```js
 var video = TWM.Videoplayer('#player_1' , {
-                            playerID : 'video_player_1',
                             video :'76979871' ,
-                            background : '#000',
                             playerWidth : 640 ,
                             playerHeight : 350,
                             autoPlay :true
