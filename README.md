@@ -3,7 +3,6 @@
            	      \|||/
 	              (o o)
 	+~~~~~~~ooO~~~~(_)~~~~~~~~~~~~~~+
-	|                     		 	|
 	|	Vimeoplayer API				|
 	|	  Adding videos on demand	|
 	|	  Track Event callbacks		|
