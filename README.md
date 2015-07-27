@@ -1,17 +1,17 @@
 ##Vimeo Video player API
 
-           	    	\|||/
-	            	(o o)
-	+~~~~~~~~~ooO~~~~(_)~~~~~~~~~~~~+
+           	      \|||/
+	              (o o)
+	+~~~~~~~ooO~~~~(_)~~~~~~~~~~~~~~+
 	|                     		 	|
 	|	Vimeoplayer API				|
 	|	  Adding videos on demand	|
 	|	  Track Event callbacks		|
 	|	  Manual event triggers		|
 	+~~~~~~~~~~~~~~~~~~~~~~~~Ooo~~~~+
-	           	   |__|__|
-	            	|| ||
-	           		ooO Ooo
+	           	 |__|__|
+	              || ||
+	           	 ooO Ooo
 
 
 ## Features
