@@ -1,4 +1,5 @@
 ##Vimeo Video player API
+```
 
            	      \|||/
 	              (o o)
@@ -11,7 +12,7 @@
 	           	 |__|__|
 	              || ||
 	           	 ooO Ooo
-
+```
 
 ## Features
 	Adding videos on demand - no dependency to load video's in iframe on pageload
