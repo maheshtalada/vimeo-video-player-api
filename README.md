@@ -17,7 +17,12 @@
 	Event Callbacks to track (Play , Pause , Finish)
 	Manual event triggers (Play , Pause , Unload)
 
+## Simple Video Player on page load
 ![vimeoplayer-custom-API](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/sample1.png)
+
+## Multi Video Player with Jumbotron
+![vimeoplayer-custom-API](https://github.com/maheshtalada/vimeoplayer-custom-API/blob/master/example/images/jumbosample.png)
+
 ## Player Initialisaiton
 
 ```html

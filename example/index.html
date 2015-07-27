@@ -44,6 +44,16 @@
                 padding-right: 10px;
                 width:100px;
             }
+            .jumbotron-right-rail li .thumb-title::before {
+                content: url("images/play.png");
+                width: 20px;
+                height: 20px;
+                display: block;
+                position: absolute;
+                top: 26px;
+                left: 60px;
+
+            }
             .jumbotron-right-rail li.active img , .jumbotron-right-rail li img:hover{
                 opacity: 1;
                 filter: alpha(opacity=100);
@@ -69,14 +79,14 @@
     </head>
     <body>
         <!-- single video player on page load -->
-        <!--<section calss="single-video-player">-->
-            <!--<h2>Simple Video Player on page load</h2>-->
-            <!--<div id="player_1" data-video="76979871" data-type="video" data-autoplay="true"></div>-->
-            <!--<br>-->
-            <!--<br>-->
-            <!--<br>-->
-            <!--&lt;!&ndash;<div id="player_2" data-video="76979871" data-type="video" data-autoplay="true"></div>&ndash;&gt;-->
-        <!--</section>-->
+        <section calss="single-video-player">
+            <h2>Simple Video Player on page load</h2>
+            <div id="player_1" data-video="76979871" data-type="video" data-autoplay="true"></div>
+            <br>
+            <br>
+            <br>
+            <!--<div id="player_2" data-video="76979871" data-type="video" data-autoplay="true"></div>-->
+        </section>
         <h2>Multi Video Player with Jumbotron</h2>
         <section class="jumbotron" data-component="jumbotron">
             <div class="jumbotron-main">
